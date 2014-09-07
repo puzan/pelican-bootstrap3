@@ -74,6 +74,10 @@
         <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
     {% endif %}
 
+    {% if FEEDBURNER_ALL_FEED %}
+        <link href="{{ FEEDBURNER_ALL_FEED }}" type="application/atom+xml" rel="alternate"
+              title="{{ SITENAME }} Feed"/>
+    {% endif %}
     {% if FEED_ALL_ATOM %}
         <link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
               title="{{ SITENAME }} ATOM Feed"/>
