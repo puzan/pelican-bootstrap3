@@ -344,7 +344,7 @@ NOTE: Boolean values will _not_ work here! They will be interpreted as literal s
 ### Facebook Open Graph
 
 In order to make the Facebook like button and other social sharing options work better, the template contains Open Graph metatags like `<meta property="og:type" content="article"/>`. You can disable them by setting `USE_OPEN_GRAPH` to _False_. You can use `OPEN_GRAPH_FB_APP_ID` to provide a Facebook _app id_.
-You can also provide a default image that will be passed as an Open Graph tag  by setting `OPEN_GRAPH_IMAGE` to a relative file path, which will be prefixed by your site's base url. Optionally, you can override this default image on a per article and per page basis, by setting the `og_image` variable in an article or page.
+You can also provide a default image that will be passed as an Open Graph tag  by setting `OPEN_GRAPH_IMAGE` to a relative file path, which will be prefixed by your site's base url. Optionally, you can override this default image on a per article and per page basis, by setting the `image` variable in an article or page.
 
 ### Twitter Cards
 
@@ -352,7 +352,7 @@ The theme supports [Summary Twitter Cards](https://dev.twitter.com/docs/cards/ty
 
 You can optionally provide a `TWITTER_USERNAME` which will be used to set the Twitter username for the site and for the content creator.
 
-The same image options for Open Graph (see above) can be used for setting images that appear on Twitter Cards. So if you have set an `OPEN_GRAPH_IMAGE` and optionally `og_image` for articles and/or pages, you're good to go for Twitter Cards as well.
+The same image options for Open Graph (see above) can be used for setting images that appear on Twitter Cards. So if you have set an `OPEN_GRAPH_IMAGE` and optionally `image` for articles and/or pages, you're good to go for Twitter Cards as well.
 
 ### Twitter Timeline
 

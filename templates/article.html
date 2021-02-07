@@ -36,9 +36,9 @@
         {% elif AUTHOR %}
             <meta property="article:author" content="{{ AUTHOR }}" />
         {% endif %}
-        {% if article.og_image %}
+        {% if article.image %}
             <meta property="og:image"
-                  content="{{ SITEURL }}/{{ article.og_image }}"/>
+                  content="{{ SITEURL }}/{{ article.image }}"/>
         {% elif OPEN_GRAPH_IMAGE %}
             <meta property="og:image"
                   content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
